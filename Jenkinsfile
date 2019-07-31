@@ -11,7 +11,7 @@ pipeline {
                 sh "mvn test"
             }
         }
-        stage ('--install--')
+        stage ('--install--') {
 	    steps {
 		sh "mvn install"
 	     }
@@ -23,3 +23,4 @@ pipeline {
         }
     }
 }
+
