@@ -1,3 +1,4 @@
+
 pipeline {
     agent any
     stages {
@@ -16,11 +17,7 @@ pipeline {
 		sh "mvn install"
 	     }
 	}
-        stage('--package--') {
-            steps {
-                sh "mvn package"
-            }
-        }
+         
     }
 }
 
